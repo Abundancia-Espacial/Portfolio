@@ -94,9 +94,6 @@
 }
 
 .vocab-word .tooltip {
-  max-width: 220px;
-  top: 125%;
-  word-wrap: break-word;
   visibility: hidden;
   background-color: #f9f9f9;
   color: #333;
@@ -106,9 +103,11 @@
   padding: 8px;
   position: absolute;
   z-index: 1;
-  bottom: 125%; 
+  top: 125%; /* aparece debajo */
   left: 50%;
   transform: translateX(-50%);
+  max-width: 220px;
+  word-wrap: break-word;
   opacity: 0;
   transition: opacity 0.3s;
 }
