@@ -81,6 +81,62 @@
     I close this cycle with a more critical and engaged perspective, and with greater curiosity for what comes next.
   </p>
 </section>
+
+<style>
+.vocab-word {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 4px;
+  font-weight: bold;
+  cursor: help;
+  border-bottom: 1px dotted #555;
+}
+
+.vocab-word .tooltip {
+  visibility: hidden;
+  width: 260px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.vocab-word:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+<div>
+  <div class="vocab-word">Timely
+    <div class="tooltip">Happening at an appropriate or relevant moment.</div>
+  </div>
+  <div class="vocab-word">Misuse
+    <div class="tooltip">Improper or incorrect use.</div>
+  </div>
+  <div class="vocab-word">Resistance
+    <div class="tooltip">Ability to withstand something, like bacteria vs drugs.</div>
+  </div>
+  <div class="vocab-word">Awareness
+    <div class="tooltip">Conscious understanding of a situation.</div>
+  </div>
+  <div class="vocab-word">Reflection
+    <div class="tooltip">Serious thought or consideration.</div>
+  </div>
+  
+</div>
+
+
   <a href="index.html">← Return home</a>
 </body>
 </html>
