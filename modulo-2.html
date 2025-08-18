@@ -1,36 +1,192 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2 Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fafafa;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  .image-block {
+    margin-bottom: 40px;
+  }
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .image-block p {
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  /* Vocab Log */
+  .vocab-word {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 4px;
+    font-weight: bold;
+    cursor: help;
+    border-bottom: 1px dotted #555;
+  }
+  .vocab-word .tooltip {
+    visibility: hidden;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 220px;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .vocab-word:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  .vocab-container {
+    background-color: #fdf6ec;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e0d9c8;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-  <style>
-    .modulos-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    
-    .boton-modulo {
-      background-color: #0077cc;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    
-    .boton-modulo:hover {
-      background-color: #005fa3;
-    }
-  </style>
-  <h1>Module 2: title</h1>
-  <p>más tareas, sigo sin saber cuáles.</p>
-  <a href="index.html">← Return home</a>
+
+<h1>Module 2 Portfolio</h1>
+
+<!-- BLOQUES DE IMAGEN + REFLEXIÓN -->
+<div class="image-block">
+  <img src="images/junkfood.jpg" alt="Actividad 1">
+  <p><strong>Reflection on Activity 1</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/healthyhabits-video.jpg" alt="Actividad 2">
+  <p><strong>Reflection on Activity 2</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/sportsverbs.jpg" alt="Actividad 3">
+  <p><strong>Reflection on Activity 3</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/whataboutyou.jpg" alt="Actividad 4">
+  <p><strong>Reflection on Activity 4</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/linkingwords.jpg" alt="Actividad 5">
+  <p><strong>Reflection on Activity 5</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/mydailyroutine.jpg" alt="Actividad 6">
+  <p><strong>Reflection on Activity 6</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/nutrition.jpg" alt="Actividad 7">
+  <p><strong>Reflection on Activity 7</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/model.jpg" alt="Actividad 8">
+  <p><strong>Reflection on Activity 8</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/thehumanbody-video.jpg" alt="Actividad 9">
+  <p><strong>Reflection on Activity 9</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/imagen10.jpg" alt="Actividad 10">
+  <p><strong>Reflection on Activity 10</strong><br><br>
+  Aquí va tu reflexión...</p>
+</div>
+
+<div class="image-block">
+  <img src="images/imagen11.jpg" alt="Actividad 11">
+  <p><strong>Reflection on Activity 11</strong><br><br>
+  (opcional)</p>
+</div>
+
+<div class="image-block">
+  <img src="images/imagen12.jpg" alt="Actividad 12">
+  <p><strong>Reflection on Activity 12</strong><br><br>
+  (opcional)</p>
+</div>
+
+<!-- VOCABULARY LOG -->
+<div class="vocab-container">
+  <h2>🌟 Vocabulary Log 🌟</h2>
+  <div class="vocab-word">Timely
+    <div class="tooltip">Happening at an appropriate or relevant moment.</div>
+  </div>
+  <div class="vocab-word">Misuse
+    <div class="tooltip">Improper or incorrect use.</div>
+  </div>
+  <div class="vocab-word">Resistance
+    <div class="tooltip">Ability to withstand something, like bacteria vs drugs.</div>
+  </div>
+  <div class="vocab-word">Awareness
+    <div class="tooltip">Conscious understanding of a situation.</div>
+  </div>
+  <div class="vocab-word">Reflection
+    <div class="tooltip">Serious thought or consideration.</div>
+  </div>
+  <!-- Continúa con el resto de tus palabras -->
+</div>
+
+<!-- BOTÓN DE VOLVER -->
+<div style="text-align:center; margin-top: 50px;">
+  <a href="index.html" 
+     style="display: inline-block; 
+            background-color: #3a7eb4; 
+            color: white; 
+            text-decoration: none; 
+            padding: 12px 25px; 
+            border-radius: 8px; 
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.2); 
+            font-size: 16px;
+            font-family: 'Segoe UI', sans-serif;
+            transition: background-color 0.3s ease;">
+    ← Return to Home
+  </a>
+</div>
+
 </body>
 </html>
